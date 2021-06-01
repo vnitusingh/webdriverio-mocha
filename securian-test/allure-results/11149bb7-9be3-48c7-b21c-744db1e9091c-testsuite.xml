@@ -1,0 +1,63 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1622552121955' stop='1622552148474'>
+    <name>securian retirement user</name>
+    <title>securian retirement user</title>
+    <test-cases>
+        <test-case start='1622552121956' status='passed' stop='1622552129205'>
+            <name>should be able to enter values in all fields and verify calculated result</name>
+            <title>should be able to enter values in all fields and verify calculated result</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-90.0.4430.212'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1622552129206' status='failed' stop='1622552142579'>
+            <name>should be able to enter values in all fields including social security fields and verify calculated result</name>
+            <title>should be able to enter values in all fields including social security fields and verify calculated result</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-90.0.4430.212'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Expect $(`#retirement-amount-results`) to have text containing
+                
+                Expected: "$5,616,714.80"
+                Received: "$5,255,330.11"</message>
+                <stack-trace>Error: Expect $(`#retirement-amount-results`) to have text containing
+                
+                Expected: "$5,616,714.80"
+                Received: "$5,255,330.11"
+                    at Context.&lt;anonymous> (C:\securian-test\test\specs\retirement.calculator.js:44:72)
+                    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+                    at async Context.executeAsync (C:\securian-test\node_modules\@wdio\utils\build\shim.js:136:16)
+                    at async Context.testFrameworkFnWrapper (C:\securian-test\node_modules\@wdio\utils\build\test-framework\testFnWrapper.js:52:18)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1622552142580' status='passed' stop='1622552148472'>
+            <name>should be able to enter change default calculator values  and verify calculated result</name>
+            <title>should be able to enter change default calculator values  and verify calculated result</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-90.0.4430.212'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
